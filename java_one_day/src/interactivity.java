@@ -26,7 +26,23 @@ public class interactivity {
 
         System.out.printf("\t\t\t%,.1f", 125225.4590);
 
-        // lets move on to accepting user input
+        // lets move on to accept user input
+        Scanner input = new Scanner(System.in);
+        System.out.println("\nEnter an integer: ");
+        int myInt = input.nextInt();
+        System.out.printf("You entered %d.%n%n", myInt);
+
+        System.out.print("Enter a double: ");
+        double myDouble = input.nextDouble();
+        System.out.printf("You entered %.2f.%n%n", myDouble);
+
+
+        System.out.print("Enter a string: ");
+        input.nextLine();
+        // this is needed to consume the enter after entering a double
+        // the enter key is essentially the newline character ("\n")
+        String myString = input.nextLine();
+        System.out.printf("You entered \"%s\".%n%n", myString);
 
 
 
